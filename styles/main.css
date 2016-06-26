@@ -33,6 +33,9 @@ h3{
 .bg-grey{
   background-color: #f2f2f2;
 }
+.bg-lightgrey{
+  background-color: #e4e2e2;
+}
 .big-background {
   width: 100%;
   height: 900px;
@@ -514,7 +517,9 @@ nav p {
 .dynamic-control #arrow-right {
     left: 77vw;
   }
-
+.adaptive h2{
+  margin-top: 0;
+}
 
 }
 @media (max-width: 500px) {
