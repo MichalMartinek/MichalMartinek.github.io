@@ -55,6 +55,7 @@ h3{
 }
 .big-background a {
   margin: auto 10px auto 0;
+  font-size: 20px;
 }
 @media (max-width: 1350px) {
   .big-background {
@@ -286,15 +287,38 @@ footer a:hover {
 .mail h2 {
   font-size: 1.7em;
 }
-.mail p {
-  font-size: 0.9em;
-  position: relative;
-  top: -15px;
+.mail div {
+  font-size: 0.92em;
+}
+.mail input[type="email"] {
+  display: inline-block;
+  border: none;
+  border-bottom: rgb(128, 128, 128) 1px solid;
+  text-align: center;
+  color: #424242;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+.mail input[type="email"]:focus {
+  outline: none;
+  border-bottom: #424242 1px solid;
+}
+.mail input[type="email"]::-webkit-input-placeholder {
+  color: rgb(179, 179, 179);
+}
+.mail input[type="email"]::-moz-placeholder {
+  color: rgb(179, 179, 179);
+}
+.mail input[type="email"]:-ms-input-placeholder {
+  color: rgb(179, 179, 179);
+}
+.mail input[type="email"]::placeholder {
+  color: rgb(179, 179, 179);
 }
 .mail input[type="submit"] {
   margin-bottom: 50px;
   position: relative;
-  top: -10px;
+  top: 20px;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   background: none;
@@ -382,6 +406,22 @@ footer a:hover {
 .shortcuts img {
   width: 90%;
   margin: 20% 0 auto 0;
+}
+.adaptive{
+  margin: -2% auto 0 auto
+}
+.adaptive img {
+  width: 100%;
+  margin: 0 auto 2% auto;
+}
+.adapative-keyboards{
+  margin: -280px auto 0px auto;
+}
+.bg-light{
+  background-color: #F5F5F5;
+}
+.bg-dark{
+  background-color: #666666;
 }
 .design {
 }
@@ -486,6 +526,11 @@ nav p {
     padding-top: 45px;
 
   }
+  .adaptive {
+  }
+  .adaptive h2 {
+    margin-top: 0;
+  }
 
 }
 @media (max-width: 750px) {
@@ -517,9 +562,7 @@ nav p {
 .dynamic-control #arrow-right {
     left: 77vw;
   }
-.adaptive h2{
-  margin-top: 0;
-}
+
 
 }
 @media (max-width: 500px) {
