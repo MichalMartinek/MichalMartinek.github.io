@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Khula, sans-serif;
+  background: #FFFFFF;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-weight: 300
+}
+
+.header {
+  position: fixed;
+  background: white;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  z-index: 99999999
+}
+
+.header h1 {
+  background-color: white;
+  margin: 0
+}
+
+.menu {
+  text-align: center;
+  background-color: rgba(26, 23, 27, .35) !important
+}
+
+.menu ul {
+  display: table;
+  padding: 20px;
+  margin: 0 auto
+}
+
+.menu li {
+  display: table-cell;
+  text-transform: uppercase;
+  font-size: 0.9em
+}
+
+.menu a {
+  color: white;
+  margin: 20px
+}
+
+.menu .menu--active {
+  font-weight: 400
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  background: #a7a6a7;
+  color: #f2f2f2;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 50px
+}
+
+footer p {
+  margin-top: 2px;
+  font-size: 0.9em;
+  letter-spacing: 2px
+}
+
+footer a {
+  color: #f2f2f2
+}
+
+footer a:hover {
+  color: #FFFFFF
+}
+
+.end {
+  padding-bottom: 10% !important
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.col-one {
+  text-align: center;
+  margin: 0 auto
+}
+
+.col-one h1 {
+  padding-top: 30px;
+  font-size: 2.3em
+}
+
+.col-one h2 {
+  padding-top: 20px;
+  font-size: 1.8em;
+  margin: 4% auto 2% auto
+}
+
+.col-one p {
+  width: 40%;
+  font-size: 1em;
+  margin: 0 auto 2% auto;
+  text-align: center
+}
+
+.col-one img {
+  margin: 00px auto 100px -40px;
+  padding-top: 40px;
+  width: 70%
+}
+
+.col-two {
+  text-align: center;
+  width: 50%
+}
+
+.col-two h2 {
+  padding-top: 200px;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 4% auto 2% auto
+}
+
+.col-two p {
+  font-size: 1em;
+  width: 60%;
+  margin: 0 auto 2% auto;
+  text-align: justify
+}
+
+.col-two img {
+  margin: 2% auto auto 30%
+}
+
+.col-three {
+  text-align: center;
+  width: 33.3%
+}
+
+@media (max-width: 900px) {
+  .row {
+    display: block;
+  }
+  .container {
+    display: block;
+  }
+  .col-two {
+    text-align: center;
+    width: 100%
+  }
+  .col-two img {
+    margin: 2% auto
+  }
+  .col-three {
+    text-align: center;
+    width: 100%;
+  }
+}

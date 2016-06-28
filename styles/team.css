@@ -1,0 +1,60 @@
+.bg-team {
+  height: 600px;
+  background-image: url("/images/team.jpg");
+  background-position: 5% 75%;
+}
+
+@media (max-width: 900px) {
+  .bg-team {
+    height: 60vw;
+  }
+}
+
+.team-main{
+  margin-bottom: 100px;
+}
+
+.team-members{
+  margin-bottom: 100px;
+  text-align: left;
+  -ms-flex-item-align: center;
+      align-self: center
+}
+
+.team-members h2 {
+  text-align: left;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team-members img {
+  width: 60%;
+  max-width: 400px;
+}
+
+.team-members p {
+  margin-left: 0;
+}
+
+.team-members h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .team-members{
+    text-align: center;
+    margin-bottom: 10px
+  }
+  .team-members img {
+    width: 70vw;
+    margin: 0 auto 0 auto;
+  }
+  .team-members p {
+    margin-left: auto;
+    padding-bottom: 100px;
+  }
+  .team-members h2 {
+    text-align: center;
+  }
+
+}

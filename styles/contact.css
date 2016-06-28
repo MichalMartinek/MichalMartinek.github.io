@@ -1,0 +1,40 @@
+.bg-contact{
+  height: 600px;
+  background-image: url("/images/contact.jpg");
+  background-position: 10% 50%;
+}
+
+@media (max-width: 900px) {
+  .bg-contact {
+    height: 65vw;
+  }
+}
+
+.contact-info {
+  margin-top: 5%
+}
+
+.contact-info p{
+  margin: 3% auto 13% auto;
+  padding: 0 2vw;
+  text-align: center;
+}
+
+.contact-info h2{
+  padding-top: 0;
+  letter-spacing: 4px;
+}
+
+.contact-info h3{
+  letter-spacing: 2px;
+  color: #636363;
+  margin: auto auto 0 auto;
+}
+
+.contact-info hr{
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 8%;
+}

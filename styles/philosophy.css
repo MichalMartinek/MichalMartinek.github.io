@@ -1,0 +1,11 @@
+.bg-phil {
+  height: 600px;
+  background-image: url("/images/philosophy.png");
+  background-position: 5% 75%;
+}
+
+@media (max-width: 1100px) {
+  .bg-phil {
+    height: 50vw;
+  }
+}
