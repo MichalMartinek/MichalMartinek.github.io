@@ -17,7 +17,7 @@ function showDivs(n) {
     setTimeout(function(){
         document.getElementById("dynamic-desc").innerHTML = x[slideIndex-1].getAttribute("alt");
 	    document.getElementById("dynamic-desc").classList.remove("pre-animation");  
-	},1200)
+	},600)
 }
 
 document.getElementById("arrow-left").addEventListener("click", function(){
@@ -54,7 +54,11 @@ window.onscroll = function() {
     if (rect.top < 1000 && !showed) {
         showed = true;
         //alert("dynamic-image");
+        document.getElementsByClassName("dynamic-image")[0].style.transition = "opacity 2.5s ease-in-out;";
         document.getElementsByClassName("dynamic-image")[0].style.opacity = "1";
+        setTimeout(function(){
+            document.getElementsByClassName("dynamic-image")[0].style.transition = "opacity 1.5s ease-in-out;";
+        },1500)
     }
     rect = document.getElementById("adaptive-img").getBoundingClientRect();
     if (rect.top < 500 && !showed2) {
@@ -63,7 +67,7 @@ window.onscroll = function() {
         document.getElementsByClassName("adapative-keyboards")[0].style.opacity = "1";
         setTimeout(function(){
             document.getElementsByClassName("adapative-keyboards")[1].style.opacity = "1"; 
-        },1500)
+        },1250)
     }
     rect = document.getElementById("shortcuts-vid").getBoundingClientRect();
     if (rect.top < 400 && !showed3) {
