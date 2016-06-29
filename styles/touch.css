@@ -66,19 +66,19 @@
 .dynamic-control {
   font-size: 5vw;
   cursor: pointer;
-  color: #f2f2f2;
   opacity: 0.7;
   margin: 0;
   padding: 0
 }
 
-.dynamic-control:hover {
-  opacity: 0.9;
-}
-
 .dynamic-control #arrow-left, .dynamic-control #arrow-right {
+  color: #f2f2f2;
   position: absolute;
   top: 17.5vw;
+}
+
+.dynamic-control #arrow-left:hover, .dynamic-control #arrow-right:hover {
+  opacity: 0.9;
 }
 
 .dynamic-control #arrow-left {
