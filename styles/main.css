@@ -377,8 +377,8 @@ footer a:hover {
   margin: 0;
   padding: 0;
   opacity: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 2.5s ease-in-out;
+  transition: opacity 2.5s ease-in-out;
 }
 .dynamic-control {
   font-size: 5vw;
@@ -396,10 +396,10 @@ footer a:hover {
   top: 17.5vw;
 }
 .dynamic-control #arrow-left {
-  left: 27.5vw;
+  left: 25.5vw;
 }
 .dynamic-control #arrow-right {
-  left: 71.4vw;
+  left: 70.5vw;
 }
 .shortcuts {
   padding-bottom: 8%
@@ -471,19 +471,19 @@ nav li {
   margin: auto 15px auto 15px;
   font-size: 1.1em;
   cursor: pointer;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+  -webkit-transition: color 2.5s ease;
+  transition: color 2.5s ease;
 }
 nav p {
   opacity: 1;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: all 1.25s ease;
+  transition: all 1.25s ease;
 }
 .active {
   color: #c79f7e;
 }
 .pre-animation {
-  opacity: 0 !important;
+  color: #f2f2f2 !important;
 }
 @media (max-width: 900px) {
   .table {
@@ -558,10 +558,10 @@ nav p {
     color: #c79f7e;
   }
 .dynamic-control #arrow-left {
-    left: 21vw;
+    left: 19vw;
   }
 .dynamic-control #arrow-right {
-    left: 77vw;
+    left: 74.5vw;
   }
 
 

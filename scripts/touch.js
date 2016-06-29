@@ -17,7 +17,7 @@ function showDivs(n) {
     setTimeout(function(){
         document.getElementById("dynamic-desc").innerHTML = x[slideIndex-1].getAttribute("alt");
 	    document.getElementById("dynamic-desc").classList.remove("pre-animation");  
-	},500)
+	},1200)
 }
 
 document.getElementById("arrow-left").addEventListener("click", function(){
@@ -49,14 +49,9 @@ document.onkeydown = function(evt) {
 var showed = false;
 window.onscroll = function() {
     var rect = document.getElementById("dynamic-img").getBoundingClientRect();
-    if (rect.top < 1100 && !showed) {
+    if (rect.top < 900 && !showed) {
         showed = true;
         document.getElementsByClassName("dynamic-image")[0].style.opacity = "1";
-        document.getElementById("dynamic-desc").classList.add("pre-animation");  
-        setTimeout(function(){
-                document.getElementById("dynamic-desc").innerHTML = document.getElementsByClassName("dynamic-image")[0].getAttribute("alt");
-                document.getElementById("dynamic-desc").classList.remove("pre-animation");  
-        },500)
     }
 };
 
