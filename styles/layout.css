@@ -12,6 +12,11 @@ body {
   font-weight: 300
 }
 
+span{
+  color: #c79f7e;
+  letter-spacing: 2px;
+}
+
 .header {
   position: fixed;
   background: white;
@@ -105,18 +110,18 @@ footer a:hover {
 
 .col-one h1 {
   padding-top: 30px;
-  font-size: 2.3em
+  font-size: 3em
 }
 
 .col-one h2 {
   padding-top: 20px;
-  font-size: 1.8em;
+  font-size: 2.5em;
   margin: 4% auto 2% auto
 }
 
 .col-one p {
   width: 40%;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0 auto 2% auto;
   text-align: center
 }
@@ -135,12 +140,12 @@ footer a:hover {
 .col-two h2 {
   padding-top: 200px;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.5em;
   margin: 4% auto 2% auto
 }
 
 .col-two p {
-  font-size: 1em;
+  font-size: 1.2em;
   width: 60%;
   margin: 0 auto 2% auto;
   text-align: justify

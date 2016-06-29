@@ -47,11 +47,30 @@ document.onkeydown = function(evt) {
     }
 };
 var showed = false;
+var showed2 = false;
+var showed3 = false;
 window.onscroll = function() {
     var rect = document.getElementById("dynamic-img").getBoundingClientRect();
-    if (rect.top < 1100 && !showed) {
+    if (rect.top < 1000 && !showed) {
         showed = true;
+        //alert("dynamic-image");
         document.getElementsByClassName("dynamic-image")[0].style.opacity = "1";
+    }
+    rect = document.getElementById("adaptive-img").getBoundingClientRect();
+    if (rect.top < 500 && !showed2) {
+        showed2 = true;
+        //alert("adaptive-img");
+        document.getElementsByClassName("adapative-keyboards")[0].style.opacity = "1";
+        setTimeout(function(){
+            document.getElementsByClassName("adapative-keyboards")[1].style.opacity = "1"; 
+        },1500)
+    }
+    rect = document.getElementById("shortcuts-vid").getBoundingClientRect();
+    if (rect.top < 400 && !showed3) {
+        showed3 = true;
+        //alert("shortcuts-vid");
+        document.getElementById("shortcuts-vid").play();
+        
     }
 };
 

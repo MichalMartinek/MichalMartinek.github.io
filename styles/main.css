@@ -75,6 +75,10 @@ body {
   min-height: 100%;
   font-weight: 300
 }
+span{
+  color: #c79f7e;
+  letter-spacing: 2px;
+}
 .header {
   position: fixed;
   background: white;
@@ -153,16 +157,16 @@ footer a:hover {
 }
 .col-one h1 {
   padding-top: 30px;
-  font-size: 2.3em;
+  font-size: 3em;
 }
 .col-one h2 {
   padding-top: 20px;
-  font-size: 1.8em;
+  font-size: 2.5em;
   margin: 4% auto 2% auto;
 }
 .col-one p {
   width: 40%;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0 auto 2% auto;
   text-align: center;
 }
@@ -178,11 +182,11 @@ footer a:hover {
 .col-two h2 {
   padding-top: 200px;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.5em;
   margin: 4% auto 2% auto;
 }
 .col-two p {
-  font-size: 1em;
+  font-size: 1.2em;
   width: 60%;
   margin: 0 auto 2% auto;
   text-align: justify;
@@ -345,9 +349,18 @@ footer a:hover {
     height: 65vw;
   }
 }
-.table {
+.desc{
+  margin: 5% auto 5% auto
 }
-.table img {
+.desc .number {
+  font-size: 4em;
+}
+.desc .text {
+  font-size: 1.8em;
+}
+.widgets {
+}
+.widgets img {
   width: 100%;
   margin: 100px auto 100px -80px;
 }
@@ -402,9 +415,9 @@ footer a:hover {
   left: 70.5vw;
 }
 .shortcuts {
-  padding-bottom: 8%
+  padding-bottom: 8vw
 }
-.shortcuts img {
+.shortcuts video {
   width: 90%;
   margin: 20% 0 auto 0;
 }
@@ -416,7 +429,10 @@ footer a:hover {
   margin: 0 auto 2% auto;
 }
 .adapative-keyboards{
-  margin: -280px auto 0px auto;
+  margin: -45% auto 0px auto;
+  opacity: 0;
+  -webkit-transition: opacity 3.5s ease;
+  transition: opacity 3.5s ease;
 }
 .bg-light{
   background-color: #F5F5F5;
