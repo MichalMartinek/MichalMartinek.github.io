@@ -49,7 +49,7 @@ document.onkeydown = function(evt) {
 var showed = false;
 window.onscroll = function() {
     var rect = document.getElementById("dynamic-img").getBoundingClientRect();
-    if (rect.top < 900 && !showed) {
+    if (rect.top < 1100 && !showed) {
         showed = true;
         document.getElementsByClassName("dynamic-image")[0].style.opacity = "1";
     }
