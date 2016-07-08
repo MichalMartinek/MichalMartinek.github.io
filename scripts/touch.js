@@ -49,6 +49,7 @@ document.onkeydown = function(evt) {
 var showed = false;
 var showed2 = false;
 var showed3 = false;
+
 window.onscroll = function() {
     var rect = document.getElementById("dynamic-img").getBoundingClientRect();
     if (rect.top < 1000 && !showed) {
