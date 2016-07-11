@@ -412,7 +412,7 @@ footer a:hover {
   left: 25.5vw;
 }
 .dynamic-control #arrow-right {
-  left: 70.5vw;
+  left: 69.3vw;
 }
 .shortcuts {
   padding-bottom: 8vw
@@ -556,7 +556,7 @@ nav p {
 }
 .dynamic .dynamic-monitor {
     width: 75vw;
-    margin: 4vw auto;
+    margin: 0vw auto;
   }
 .dynamic .dynamic-image {
     top: 22.5vw;
@@ -568,7 +568,7 @@ nav p {
 }
 .dynamic-control #arrow-left, .dynamic-control #arrow-right {
     position: absolute;
-    top: 25.5vw;
+    top: 24.1vw;
   }
 .dynamic-control #arrow-left:hover, .dynamic-control #arrow-right:hover {
     color: #c79f7e;
@@ -577,7 +577,7 @@ nav p {
     left: 19vw;
   }
 .dynamic-control #arrow-right {
-    left: 74.5vw;
+    left: 73.5vw;
   }
 
 
