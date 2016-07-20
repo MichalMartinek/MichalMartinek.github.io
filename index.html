@@ -110,15 +110,15 @@
     var icon = document.getElementById("menu-icon");
     icon.addEventListener("click", function(){
       var menu =  document.getElementById("menu");
-      if (menu.style.display == "none") {
-        icon.style.background = "url(\"/images/krizok.png\")";
-        icon.style.backgroundSize = "100%";
-        menu.style.display = "block";
+      if (menu.style.display != "" && menu.style.display != "none") {
+        menu.style.display = "none";
+        document.getElementById("menu-icon").style.background = "url(\"/images/menu.png\")";
+        document.getElementById("menu-icon").style.backgroundSize = "100%";
       }
       else {
-        menu.style.display = "none";
-        icon.style.background = "url(\"/images/menu.png\")";
-        icon.style.backgroundSize = "100%";
+        document.getElementById("menu-icon").style.background = "url(\"/images/krizok.png\")";
+        document.getElementById("menu-icon").style.backgroundSize = "100%";
+        menu.style.display = "block";
       }
     });
     </script>
