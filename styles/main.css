@@ -215,7 +215,7 @@ footer {
   margin-top: 50px
 }
 footer p {
-  margin-top: 2px;
+  margin: 2px auto 0 auto;
   font-size: 0.9em;
   letter-spacing: 2px;
 }
