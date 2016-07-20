@@ -21,19 +21,30 @@ span{
   position: fixed;
   background: white;
   width: 100%;
+  height: 90px;
   text-align: center;
-  background-color: transparent;
   z-index: 99999999
 }
 
-.header h1 {
+.header > a {
   background-color: white;
-  margin: 0
+  display: inline-block;
+  margin: 0;
+  padding-top: 8px;
+  margin-left: -60px
+}
+
+.header img {
+  height: 70px
 }
 
 .menu {
+  position: fixed;
+  top: 90px;
+  width: 100vw;
   text-align: center;
-  background-color: rgba(26, 23, 27, .35) !important
+  margin: 0;
+  background-color: rgba(26, 23, 27, .35)
 }
 
 .menu ul {
@@ -55,6 +66,52 @@ span{
 
 .menu .menu--active {
   font-weight: 400
+}
+
+.menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  content: '';
+  float: left;
+
+  background: url("/images/menu.png");
+  background-size: 100%;
+  border: none;
+}
+
+@media only screen and (max-width : 640px) {
+  .menu-icon {
+    display:inline-block;
+    margin: 25px 20px;
+    z-index: 99999; 
+  }
+  .menu {
+    display: none;
+    width: 100vw;
+    position: fixed;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: white;
+    text-align: left;
+    z-index: 999999999999999999
+  }
+  .menu ul {
+    display: block;
+    margin-top: 4em
+  }
+  .menu li {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em
+  }
+  .menu a {
+    color: black
+  }
+  
 }
 
 footer {
@@ -167,6 +224,12 @@ footer a:hover {
   .container {
     display: block;
   }
+  .col-one {
+  }
+  .col-one p {
+    width: 90%;
+    text-align: left
+  }
   .col-two {
     text-align: center;
     width: 100%
@@ -174,8 +237,15 @@ footer a:hover {
   .col-two img {
     margin: 2% auto
   }
+  .col-two p {
+    width: 90%;
+    text-align: left
+  }
   .col-three {
     text-align: center;
-    width: 100%;
+    width: 100%
+  }
+  .col-three p {
+    width: 90%
   }
 }

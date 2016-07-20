@@ -30,6 +30,15 @@ h2{
 h3{
   font-weight: 300;
 }
+.centerify {
+  text-align: center !important;
+}
+.bg-light{
+  background-color: #F5F5F5;
+}
+.bg-dark{
+  background-color: #666666;
+}
 .bg-grey{
   background-color: #f2f2f2;
 }
@@ -63,6 +72,17 @@ h3{
     padding: 17vw 13.3vw 0 ;
   }
 }
+@media (max-width: 900px) {
+  .big-background {
+    height: 66.65vw;
+    padding: 22vw 4vw 0 ;
+  }
+}
+@media (max-width: 640px) {
+  .big-background {
+    padding-top: 90px;
+  }
+}
 * {
   box-sizing: border-box
 }
@@ -83,17 +103,27 @@ span{
   position: fixed;
   background: white;
   width: 100%;
+  height: 90px;
   text-align: center;
-  background-color: transparent;
   z-index: 99999999
 }
-.header h1 {
+.header > a {
   background-color: white;
+  display: inline-block;
   margin: 0;
+  padding-top: 8px;
+  margin-left: -60px;
+}
+.header img {
+  height: 70px;
 }
 .menu {
+  position: fixed;
+  top: 90px;
+  width: 100vw;
   text-align: center;
-  background-color: rgba(26, 23, 27, .35) !important
+  margin: 0;
+  background-color: rgba(26, 23, 27, .35)
 }
 .menu ul {
   display: table;
@@ -111,6 +141,50 @@ span{
 }
 .menu .menu--active {
   font-weight: 400;
+}
+.menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  content: '';
+  float: left;
+
+  background: url("/images/menu.png");
+  background-size: 100%;
+  border: none;
+}
+@media only screen and (max-width : 640px) {
+  .menu-icon {
+    display:inline-block;
+    margin: 25px 20px;
+    z-index: 99999; 
+  }
+  .menu {
+    display: none;
+    width: 100vw;
+    position: fixed;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: white;
+    text-align: left;
+    z-index: 999999999999999999
+  }
+  .menu ul {
+    display: block;
+    margin-top: 4em;
+  }
+  .menu li {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+  }
+  .menu a {
+    color: black;
+  }
+  
 }
 footer {
   width: 100%;
@@ -205,6 +279,12 @@ footer a:hover {
   .container {
     display: block;
   }
+  .col-one {
+  }
+  .col-one p {
+    width: 90%;
+    text-align: left;
+  }
   .col-two {
     text-align: center;
     width: 100%
@@ -212,9 +292,16 @@ footer a:hover {
   .col-two img {
     margin: 2% auto;
   }
+  .col-two p {
+    width: 90%;
+    text-align: left;
+  }
   .col-three {
     text-align: center;
-    width: 100%;
+    width: 100%
+  }
+  .col-three p {
+    width: 90%;
   }
 }
 .modalDialog {
@@ -258,7 +345,7 @@ footer a:hover {
 .bg-home {
     background-image: url("/images/imac.png");
 }
-@media (max-width: 615px) { /*spatne citelne uz od 805 */
+@media (max-width: 640px) { /*spatne citelne uz od 805 */
   .bg-home {
     background: none;
     background-color: white;
@@ -412,12 +499,12 @@ footer a:hover {
   left: 25.5vw;
 }
 .dynamic-control #arrow-right {
-  left: 69.3vw;
+  left: 70.3vw;
 }
 .shortcuts {
-  padding-bottom: 8vw
 }
 .shortcuts video {
+  padding-bottom: 8vw;
   width: 90%;
   margin: 20% 0 auto 0;
 }
@@ -434,15 +521,10 @@ footer a:hover {
   -webkit-transition: opacity 3.5s ease;
   transition: opacity 3.5s ease;
 }
-.bg-light{
-  background-color: #F5F5F5;
-}
-.bg-dark{
-  background-color: #666666;
-}
 .design {
 }
 .design h2 {
+  margin-top: 0;
   padding-top: 120px;
 }
 .design img {
@@ -502,6 +584,11 @@ nav p {
   color: #f2f2f2 !important;
 }
 @media (max-width: 900px) {
+  .shortcuts {
+  }
+  .shortcuts video {
+    margin: 5% 0 auto 0;
+  }
   .table {
   }
   .table img {
@@ -512,6 +599,7 @@ nav p {
     position: relative;
   }
   .design {
+    background: white
   }
   .design img {
     width: 70vw;
@@ -531,7 +619,10 @@ nav p {
     width: 70%;
     margin: 10px auto;
   }
-  .platform {
+  .platform-prop {
+    background: white;
+  }
+  .platform { 
     float: left;
     text-align: center;
     width: 33.3%;
@@ -555,34 +646,40 @@ nav p {
   height: 48vw
 }
 .dynamic .dynamic-monitor {
-    width: 75vw;
+    width: 93vw;
     margin: 0vw auto;
   }
 .dynamic .dynamic-image {
     top: 22.5vw;
-    left: 25vw; /*suprise*/
-    width: 50vw;
+    left: 15vw;
+    width: 70vw;
   }
 .dynamic-control {
   font-size: 7.5vw
 }
 .dynamic-control #arrow-left, .dynamic-control #arrow-right {
     position: absolute;
-    top: 24.1vw;
-  }
-.dynamic-control #arrow-left:hover, .dynamic-control #arrow-right:hover {
-    color: #c79f7e;
+    top: 27vw;
   }
 .dynamic-control #arrow-left {
-    left: 19vw;
+    left: 5vw;
   }
 .dynamic-control #arrow-right {
-    left: 73.5vw;
+    left: 89vw;
   }
 
 
 }
 @media (max-width: 500px) {
+  .magic-line {
+    display: none;
+  }
+  .magic-breakline {
+    display: block;
+  }
+  .platform-prop {
+    padding-top: 12vw;
+  }
   .platform {
     float: none;
     text-align: center;

@@ -10,9 +10,10 @@
 </head>
 <body>
     <header class="header">
-      <h1><a href="/" class="header__heading"><img src="/images/Senses.png" width="9%"></a></h1>
-      </nav>
-      <div class="menu">
+      <button class="menu-icon" id="menu-icon"></button>
+      <a href="/" class="header__heading"><img src="/images/Senses.png"></a>
+    </header>
+    <div class="menu" id="menu">
         <ul>
           <li role="menuitem"><a  href="/"> Home </a></li>
           <li role="menuitem"><a  href="/Touch">Touch </a></li>
@@ -21,7 +22,6 @@
           <li role="menuitem"><a class="menu--active" href="/Contact">Contact </a></li>
         </ul>
       </div>
-    </header>
     <div class="big-background bg-contact"></div>
 <div class="row">
   <div class="col-three contact-info">
@@ -63,5 +63,22 @@
    2016 © <a href="/">Senses</a>
  </p>
     </footer>
+
+    <script type="text/javascript">
+    var icon = document.getElementById("menu-icon");
+    icon.addEventListener("click", function(){
+      var menu =  document.getElementById("menu");
+      if (menu.style.display == "none") {
+        icon.style.background = "url(\"/images/krizok.png\")";
+        icon.style.backgroundSize = "100%";
+        menu.style.display = "block";
+      }
+      else {
+        menu.style.display = "none";
+        icon.style.background = "url(\"/images/menu.png\")";
+        icon.style.backgroundSize = "100%";
+      }
+    });
+    </script>
 </body>
 </html>

@@ -37,6 +37,18 @@ h3{
   font-weight: 300;
 }
 
+.centerify {
+  text-align: center !important;
+}
+
+.bg-light{
+  background-color: #F5F5F5;
+}
+
+.bg-dark{
+  background-color: #666666;
+}
+
 .bg-grey{
   background-color: #f2f2f2;
 }
@@ -74,5 +86,18 @@ h3{
   .big-background {
     height: 66.65vw;
     padding: 17vw 13.3vw 0 ;
+  }
+}
+
+@media (max-width: 900px) {
+  .big-background {
+    height: 66.65vw;
+    padding: 22vw 4vw 0 ;
+  }
+}
+
+@media (max-width: 640px) {
+  .big-background {
+    padding-top: 90px;
   }
 }

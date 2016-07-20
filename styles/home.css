@@ -2,7 +2,7 @@
     background-image: url("/images/imac.png");
 }
 
-@media (max-width: 615px) { /*spatne citelne uz od 805 */
+@media (max-width: 640px) { /*spatne citelne uz od 805 */
   .bg-home {
     background: none;
     background-color: white;
