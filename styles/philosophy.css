@@ -9,3 +9,10 @@
     height: 50vw;
   }
 }
+
+@media (max-width: 500px) {
+  .bg-phil {
+    height: 60vw;
+    background-size: cover;
+  }
+}

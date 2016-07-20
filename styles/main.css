@@ -85,7 +85,7 @@ h3{
 }
 @media (max-width: 640px) {
   .big-background {
-    padding-top: 90px;
+    padding-top: 70px;
   }
 }
 * {
@@ -117,7 +117,6 @@ span{
   display: inline-block;
   margin: 0;
   padding-top: 8px;
-  margin-left: -60px;
 }
 .header img {
   height: 70px;
@@ -149,22 +148,35 @@ span{
 }
 .menu-icon {
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   content: '';
   float: left;
 
   background: url("/images/menu.png");
-  background-size: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
 }
 @media only screen and (max-width : 640px) {
+  .header {
+    height: 65px
+  }
+  .header > a {
+    margin-left: -60px;
+    background: none;
+  }
+  .header img {
+    overflow: hidden;
+    height: 50px;
+  }
   .menu-icon {
     display:inline-block;
     margin: 25px 20px;
     z-index: 99999; 
   }
   .menu {
+    top: 60px;
     display: none;
     width: 100vw;
     position: fixed;
@@ -176,7 +188,7 @@ span{
   }
   .menu ul {
     display: block;
-    margin-top: 4em;
+    margin-top: 2em;
   }
   .menu li {
     display: block;
@@ -753,6 +765,12 @@ nav p {
 @media (max-width: 1100px) {
   .bg-phil {
     height: 50vw;
+  }
+}
+@media (max-width: 500px) {
+  .bg-phil {
+    height: 60vw;
+    background-size: cover;
   }
 }
 .bg-team {

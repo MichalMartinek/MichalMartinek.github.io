@@ -77,11 +77,13 @@ Our lead team is composed by colourful people. We have great CTO, which can lead
       if (menu.style.display != "" && menu.style.display != "none") {
         menu.style.display = "none";
         document.getElementById("menu-icon").style.background = "url(\"/images/menu.png\")";
-        document.getElementById("menu-icon").style.backgroundSize = "100%";
+        document.getElementById("menu-icon").style.backgroundSize = "contain";
+        document.getElementById("menu-icon").style.backgroundRepeat = "no-repeat";
       }
       else {
         document.getElementById("menu-icon").style.background = "url(\"/images/krizok.png\")";
-        document.getElementById("menu-icon").style.backgroundSize = "100%";
+        document.getElementById("menu-icon").style.backgroundSize = "contain";
+        document.getElementById("menu-icon").style.backgroundRepeat = "no-repeat";
         menu.style.display = "block";
       }
     });
