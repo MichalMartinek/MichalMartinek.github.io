@@ -50,14 +50,6 @@ var showed = false;
 var showed2 = false;
 var showed3 = false;
 
-function enrichtActivities(activities, state) {
-    for (let activity of activities) {
-        // Read user from state by user id
-        activity.user = state.users[activity.userID];
-    }   
-    return activities;
-}
-
 window.onscroll = function() {
     var rect = document.getElementById("dynamic-img").getBoundingClientRect();
     if (rect.top < 1000 && !showed) {
