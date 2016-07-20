@@ -250,7 +250,7 @@ footer a:hover {
   text-align: center;
 }
 .col-one img {
-  margin: 00px auto 100px -40px;
+  margin: 0 auto;
   padding-top: 40px;
   width: 70%;
 }
@@ -541,7 +541,7 @@ footer a:hover {
 }
 .design img {
   width: 100%;
-  margin: 10% 0px auto 80px;
+  margin: 5% 0px auto 80px;
 }
 .fonts {
   padding: 0
@@ -620,7 +620,7 @@ nav p {
   }
   .design img {
     width: 70vw;
-    margin: 100px auto 0px auto;
+    margin: 40px auto 0px auto;
   }
   .design:first-child {
     position: absolute;
