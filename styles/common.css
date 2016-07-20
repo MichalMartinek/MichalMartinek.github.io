@@ -41,6 +41,12 @@ h3{
   text-align: center !important;
 }
 
+@media (max-width: 500px) {
+  .magic-500px-hidden {
+    display: none;
+  }
+}
+
 .bg-light{
   background-color: #F5F5F5;
 }

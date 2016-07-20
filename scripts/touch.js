@@ -79,5 +79,4 @@ window.onscroll = function() {
     }
 };
 
-alert("dynamic-image");
 //showDivs(slideIndex);

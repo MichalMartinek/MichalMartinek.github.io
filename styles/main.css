@@ -33,6 +33,11 @@ h3{
 .centerify {
   text-align: center !important;
 }
+@media (max-width: 500px) {
+  .magic-500px-hidden {
+    display: none;
+  }
+}
 .bg-light{
   background-color: #F5F5F5;
 }
@@ -503,10 +508,17 @@ footer a:hover {
 }
 .shortcuts {
 }
-.shortcuts video {
+.shortcuts h2 {
+  margin-top: 20%;
+  padding-top: 0;
+}
+.shortcuts video, .shortcuts img {
   padding-bottom: 8vw;
   width: 90%;
   margin: 20% 0 auto 0;
+}
+.shortcuts img {
+  display: none;
 }
 .adaptive{
   margin: -2% auto 0 auto
@@ -586,8 +598,13 @@ nav p {
 @media (max-width: 900px) {
   .shortcuts {
   }
-  .shortcuts video {
+  .shortcuts img {
+    display: inline;
+    display: initial;
     margin: 5% 0 auto 0;
+  }
+  .shortcuts video {
+    display: none;
   }
   .table {
   }

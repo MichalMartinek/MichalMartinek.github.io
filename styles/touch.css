@@ -92,10 +92,19 @@
 .shortcuts {
 }
 
-.shortcuts video {
+.shortcuts h2 {
+  margin-top: 20%;
+  padding-top: 0;
+}
+
+.shortcuts video, .shortcuts img {
   padding-bottom: 8vw;
   width: 90%;
   margin: 20% 0 auto 0;
+}
+
+.shortcuts img {
+  display: none;
 }
 
 .adaptive{
@@ -194,8 +203,13 @@ nav p {
 @media (max-width: 900px) {
   .shortcuts {
   }
-  .shortcuts video {
+  .shortcuts img {
+    display: inline;
+    display: initial;
     margin: 5% 0 auto 0;
+  }
+  .shortcuts video {
+    display: none;
   }
   .table {
   }
