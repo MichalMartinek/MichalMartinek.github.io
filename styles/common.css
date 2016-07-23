@@ -47,6 +47,12 @@ h3{
   }
 }
 
+@media (max-width: 800px) {
+  .magic-800px-hidden {
+    display: none;
+  }
+}
+
 .bg-light{
   background-color: #F5F5F5;
 }

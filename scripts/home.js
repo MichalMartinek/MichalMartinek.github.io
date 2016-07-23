@@ -33,7 +33,7 @@ document.getElementById("videoBtn").addEventListener("click", function(event) {
 	  var params = { allowScriptAccess: "always",
      allowFullScreen: "true"  };
     var atts = { id: "myytplayer" };
-    swfobject.embedSWF("http://www.youtube.com/v/YD73GrYeWqk?enablejsapi=1&fs=1&playerapiid=ytplayer&version=3&rel=0",
+    swfobject.embedSWF("https://www.youtube.com/v/GeA8UCiSgmQ?enablejsapi=1&fs=1&playerapiid=ytplayer&version=3&rel=0",
                        "ytapiplayer", "800", "500", "8", null, null, params, atts);
   } else { /*Pripade uz nacteneho prehravace spusteni prehravani */
 		ytplayer.playVideo();
