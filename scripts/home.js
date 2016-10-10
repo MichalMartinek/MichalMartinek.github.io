@@ -1,16 +1,17 @@
 var ytplayer = false;
-
+var idPlayer = 'ytapiplayer'; 
 
 function onYouTubePlayerReady(playerId) {
-      ytplayer = document.getElementById("myytplayer");
+      //ytplayer = document.getElementById("myytplayer");
       ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
       ytplayer.playVideo();
  }
 
 function onytplayerStateChange(newState) {
-   if (newState === 0) { /*0 == skonceni videa */
+   if (newState.data === 0 && ytplayer) { /*0 == skonceni videa */
+    console.log("A");
 		document.getElementById("videoModal").classList.toggle("show");
-    var element = document.getElementById("myytplayer");
+    var element = document.getElementById(idPlayer);
     element.parentNode.removeChild(element);
     ytplayer = false;
     var node = document.createElement("div");
@@ -30,11 +31,21 @@ document.onkeydown = function(evt) {
 document.getElementById("videoBtn").addEventListener("click", function(event) {
   document.getElementById("videoModal").classList.toggle("show");
   if (!ytplayer) {  /*Inicializace youtube prehravace */
-	  var params = { allowScriptAccess: "always",
+	  /*var params = { allowScriptAccess: "always",
      allowFullScreen: "true"  };
     var atts = { id: "myytplayer" };
     swfobject.embedSWF("https://www.youtube.com/v/GeA8UCiSgmQ?enablejsapi=1&fs=1&playerapiid=ytplayer&version=3&rel=0",
-                       "ytapiplayer", "800", "500", "8", null, null, params, atts);
+                       "ytapiplayer", "800", "500", "8", null, null, params, atts);*/
+
+    ytplayer = new YT.Player(idPlayer, {
+          height: '500',
+          width: '800',
+          videoId: 'GeA8UCiSgmQ',
+          events: {
+            'onReady': onYouTubePlayerReady,
+            'onStateChange': onytplayerStateChange
+          }
+        });
   } else { /*Pripade uz nacteneho prehravace spusteni prehravani */
 		ytplayer.playVideo();
 	}
